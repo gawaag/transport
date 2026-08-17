@@ -1,0 +1,228 @@
+@import "tailwindcss";
+@import "@fontsource-variable/plus-jakarta-sans";
+@import "@fontsource-variable/noto-sans-arabic";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans Variable", "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-ar: "Noto Sans Arabic Variable", "Noto Sans Arabic", ui-sans-serif, system-ui, sans-serif;
+}
+
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+:root {
+  --bg: #f3f4f6;
+  --bg-elev: #ffffff;
+  --ink: #16181c;
+  --muted: #5c616a;
+  --line: rgb(22 24 28 / 0.12);
+  --accent: #d4782a;
+  --accent-ink: #1a1208;
+  --shadow: 0 18px 50px rgb(22 24 28 / 0.08);
+  --radius: 16px;
+  --ease: cubic-bezier(0.32, 0.72, 0, 1);
+}
+
+[data-theme="dark"] {
+  --bg: #14161a;
+  --bg-elev: #1c1f24;
+  --ink: #f3f1ec;
+  --muted: #a8adb6;
+  --line: rgb(243 241 236 / 0.12);
+  --shadow: 0 18px 50px rgb(0 0 0 / 0.35);
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+html {
+  color-scheme: light;
+}
+
+[data-theme="dark"] {
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background: var(--bg);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+html[lang="ar"] body {
+  font-family: var(--font-ar);
+}
+
+.lx-logo {
+  direction: ltr;
+  unicode-bidi: isolate;
+  font-family: var(--font-sans);
+}
+
+.lx-logo text {
+  font-family: var(--font-sans);
+  unicode-bidi: isolate;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--accent-ink);
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.lx-wrap {
+  width: min(1180px, calc(100% - 2rem));
+  margin-inline: auto;
+}
+
+.lx-grain {
+  position: fixed;
+  inset: 0;
+  z-index: 40;
+  pointer-events: none;
+  opacity: 0.035;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 160 160' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  .lx-glass {
+    backdrop-filter: none;
+    background: var(--bg-elev);
+  }
+}
+
+.lx-bizcard {
+  aspect-ratio: 85 / 55;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1.35rem 1.5rem;
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.lx-bizcard-front {
+  background: #16181c;
+  color: #f3f1ec;
+  --bg: #16181c;
+  --muted: #a8adb6;
+  --bg-elev: #f3f1ec;
+}
+
+.lx-bizcard-back {
+  background: #f4f4f5;
+  color: #16181c;
+  --bg: #f4f4f5;
+  --muted: #5c616a;
+  --bg-elev: #ffffff;
+  box-shadow: inset 0 0 0 1px rgb(22 24 28 / 0.08);
+}
+
+.lx-socials {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 22px 22px;
+  gap: 18px;
+  background-color: rgb(238, 238, 238);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.055);
+}
+
+[data-theme="dark"] .lx-socials {
+  background-color: #2a2d33;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+}
+
+.lx-socials-compact {
+  padding: 0;
+  gap: 10px;
+  background: transparent;
+  box-shadow: none;
+}
+
+.lx-social {
+  width: 52px;
+  height: 52px;
+  background-color: rgb(44, 44, 44);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: 0.3s;
+}
+
+.lx-socials-compact .lx-social {
+  width: 36px;
+  height: 36px;
+}
+
+.lx-social-ig:hover {
+  background-color: #d62976;
+  transition-duration: 0.3s;
+}
+
+.lx-social-tt:hover {
+  background-color: #fe2c55;
+  transition-duration: 0.3s;
+}
+
+.lx-social-wa:hover {
+  background-color: #128c7e;
+  transition-duration: 0.3s;
+}
+
+.lx-social:active {
+  transform: scale(0.9);
+  transition-duration: 0.3s;
+}
+
+.lx-social-svg {
+  width: 17px;
+  height: 17px;
+}
+
+.lx-socials-compact .lx-social-svg {
+  width: 14px;
+  height: 14px;
+}
+
+.lx-social-svg path {
+  fill: rgb(255, 255, 255);
+}
+
+.lx-social:hover .lx-social-svg {
+  animation: lx-slide-in-top 0.3s both;
+}
+
+@keyframes lx-slide-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

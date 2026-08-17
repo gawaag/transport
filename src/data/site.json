@@ -1,0 +1,345 @@
+{
+  "brand": {
+    "name": "S.A.M TRANSPORT CHARK",
+    "shortName": "S.A.M",
+    "mark": "SAM"
+  },
+  "seo": {
+    "title": "S.A.M TRANSPORT CHARK | Transport bagages France Maroc",
+    "description": "Transitaire France-Maroc depuis Savigny-sur-Orge. Groupage France-Maroc. Un départ tous les 15 jours. A partir de 1,50 euro le kilo."
+  },
+  "contact": {
+    "phone1": "0759284841",
+    "phone2": "0623768527",
+    "whatsapp": "0759284841",
+    "email": "contact@samtransportchark.fr",
+    "address": "27 Avenue de la Gare",
+    "city": "91600 Savigny-sur-Orge",
+    "hours": "Mar-Sam 9h30-18h · Lun 10h-14h",
+    "instagram": "https://instagram.com/samtransportchark",
+    "tiktok": "https://www.tiktok.com/@samtransportchark"
+  },
+  "theme": {
+    "accent": "#D4782A",
+    "accentInk": "#1A1208",
+    "radius": 16
+  },
+  "arabicTagline": "إرساليات سام للنقل الدولي",
+  "agencyImage": "/images/agence-comptoir.png",
+  "cardFront": "/cards/front.png",
+  "cardBack": "/cards/back.png",
+  "hero": {
+    "kicker": "S.A.M TRANSPORT CHARK",
+    "headline": "France Maroc, sans l'aéroport.",
+    "sub": "Collecte en Essonne. Livraison au Maroc.",
+    "ctaPrimary": "Devis WhatsApp",
+    "ctaSecondary": "1,50 € / kg",
+    "image": "/images/highway-night.png"
+  },
+  "offer": {
+    "pricePerKg": 1.5,
+    "headline": "Le kilo, pas la valise.",
+    "body": "Tarif de démarrage pour le groupage. Collecte, acheminement et remise inclus dans le kilo.",
+    "weighNote": "Le montant affiché est une estimation, calculée à partir des poids renseignés. À l'agence, chaque bagage est pesé. Si la balance indique un poids différent, le tarif est ajusté.",
+    "defaultKg": 40,
+    "points": [
+      {
+        "title": "Collecte Ile-de-France",
+        "text": "Prise en charge à Savigny-sur-Orge et dans le 91."
+      },
+      {
+        "title": "Acheminement",
+        "text": "Le groupage part du 91 jusqu'au Maroc."
+      },
+      {
+        "title": "Livraison Maroc",
+        "text": "Remise en ville, chez un proche ou en agence partenaire."
+      }
+    ]
+  },
+  "cadence": {
+    "value": "15",
+    "unit": "jours",
+    "kicker": "Toute l'année",
+    "headline": "Un départ tous les 15 jours.",
+    "body": "Le groupage part régulièrement, France vers Maroc et retour. Vous posez vos colis, on les met sur le prochain départ."
+  },
+  "servicesTitle": "Ce que l'on prend en charge.",
+  "servicesBody": "Valises, cartons, effets personnels. Aller et retour, sans passer par la soute avion.",
+  "services": [
+    {
+      "title": "Valises et bagages",
+      "text": "Quand le quota avion ne suffit plus, on envoie le surplus par la route."
+    },
+    {
+      "title": "Cartons et colis",
+      "text": "Linge, ustensiles, affaires d'étudiant, cadeaux pour la famille."
+    },
+    {
+      "title": "Petit électroménager",
+      "text": "Sur devis, bien calé, avec une assurance de base incluse."
+    },
+    {
+      "title": "Aller et retour",
+      "text": "France vers Maroc, Maroc vers France. Même interlocuteur."
+    }
+  ],
+  "route": {
+    "headline": "Du comptoir jusqu'au Maroc.",
+    "body": "Pas de DHL, pas de FedEx. Un groupage France-Maroc.",
+    "steps": [
+      {
+        "title": "Comptoir Essonne",
+        "text": "Vous déposez au comptoir ou on collecte. Pesée réelle, étiquetage, récépissé.",
+        "image": "/images/agence-comptoir.png"
+      },
+      {
+        "title": "Remise au Maroc",
+        "text": "Arrivée au Maghreb, puis livraison à l'adresse ou retrait en ville.",
+        "image": "/images/maroc-delivery.png"
+      }
+    ]
+  },
+  "coverage": {
+    "headline": "Tout le Maroc, depuis le 91.",
+    "body": "Départ Savigny-sur-Orge. Remise dans les grandes villes, et organisation vers le reste du pays.",
+    "fromLabel": "Collecte France",
+    "fromPlaces": ["Savigny-sur-Orge", "Évry", "Grigny", "Juvisy", "Corbeil", "Paris et 91"],
+    "toLabel": "Livraison Maroc",
+    "cities": ["Casablanca", "Rabat", "Marrakech", "Fès", "Tanger", "Agadir", "Meknès", "Oujda", "Nador", "Kénitra"],
+    "mapImage": "/images/maroc-map.png",
+    "sideImage": "/images/agence-comptoir.png"
+  },
+  "desksTitle": "France et Maroc.",
+  "desksBody": "Un réseau de correspondants. WhatsApp en premier, rappel si vous préférez.",
+  "desks": [
+    {
+      "country": "France",
+      "phones": ["0759284841", "0623768527"],
+      "note": "Agence Savigny-sur-Orge, Essonne."
+    },
+    {
+      "country": "Maroc",
+      "phones": ["212660756654", "212664547988", "212666593848"],
+      "note": "Remise en ville et suivi local."
+    }
+  ],
+  "quotes": [
+    {
+      "text": "Collecte à Savigny, suivi clair, valises arrivées à Casablanca sans surprise.",
+      "name": "Youssef El Amrani",
+      "meta": "Savigny vers Casablanca",
+      "lang": "fr"
+    },
+    {
+      "text": "الاستلام في الوكالة كان سهل، والأمتعة وصلت فاس في حالة جيدة.",
+      "name": "فاطمة الزهري",
+      "meta": "إيفري نحو فاس",
+      "lang": "ar"
+    },
+    {
+      "text": "On a envoyé 3 bagages pour Tanger. Le kilo est lisible, personne ne négocie au dernier moment.",
+      "name": "Nadia Benkirane",
+      "meta": "Juvisy vers Tanger",
+      "lang": "fr"
+    },
+    {
+      "text": "واتساب في كل مرحلة. أمتعتي وصلت مراكش بسلام، أنصح بهم.",
+      "name": "حسن الإدريسي",
+      "meta": "كورييل نحو مراكش",
+      "lang": "ar"
+    }
+  ],
+  "faqTitle": "Questions fréquentes",
+  "faq": [
+    {
+      "q": "C'est bien un transitaire, pas un coursier express ?",
+      "a": "Oui. On groupe les envois entre la France et le Maroc. Ce n'est pas DHL. Le délai est plus long, le kilo est beaucoup plus bas."
+    },
+    {
+      "q": "Quel délai compter ?",
+      "a": "En général 8 à 15 jours après la prise en charge, selon le groupage et la ville d'arrivée. Un départ part tous les 15 jours."
+    },
+    {
+      "q": "Que peut-on envoyer ?",
+      "a": "Valises, cartons, vêtements, linge, ustensiles, petit électroménager, affaires d'étudiant. Pas d'alcool, pas de denrées périssables, pas de produits inflammables, pas de marchandises interdites."
+    },
+    {
+      "q": "Vous faites aussi le Maroc vers la France ?",
+      "a": "Oui, dans les deux sens. Dites-nous la ville de départ au Maroc et l'adresse en Ile-de-France, on organise le retour."
+    },
+    {
+      "q": "Comment obtenir un devis ?",
+      "a": "WhatsApp est le plus rapide : poids, nombre de colis, ville de départ et d'arrivée. Vous pouvez aussi laisser vos coordonnées, on vous rappelle."
+    }
+  ],
+  "form": {
+    "headline": "Dites-nous le besoin. On répond sur WhatsApp.",
+    "body": "Poids, villes, sens du trajet. Un message suffit. Si vous préférez, on vous rappelle.",
+    "submitWhatsapp": "Envoyer sur WhatsApp",
+    "submitCallback": "Je préfère un rappel",
+    "successWhatsapp": "WhatsApp s'ouvre avec votre demande.",
+    "successCallback": "C'est noté. On vous rappelle sur ce numéro.",
+    "name": "Nom",
+    "phone": "Téléphone",
+    "direction": "Sens du trajet",
+    "weight": "Poids (kg)",
+    "from": "Départ",
+    "to": "Arrivée",
+    "need": "Votre besoin",
+    "dirFrMa": "France vers Maroc",
+    "dirMaFr": "Maroc vers France",
+    "error": "Indiquez votre nom et un numéro joignable."
+  },
+  "footer": {
+    "blurb": "Transitaire France-Maroc depuis Savigny-sur-Orge. Groupage France-Maroc.",
+    "agency": "Agence",
+    "contact": "Contact"
+  },
+  "cardsTitle": "Carte de visite",
+  "cardsBody": "Recto et verso, à enregistrer ou à imprimer.",
+  "cardsFront": "Recto",
+  "cardsBack": "Verso",
+  "ar": {
+    "seo": {
+      "title": "S.A.M TRANSPORT CHARK | نقل الأمتعة فرنسا المغرب",
+      "description": "وكيل شحن بين فرنسا والمغرب من سافيني سور أورج. تجميع فرنسا المغرب. رحيل كل 15 يوما. ابتداء من 1.50 يورو للكيلو."
+    },
+    "hero": {
+      "kicker": "S.A.M TRANSPORT CHARK",
+      "headline": "فرنسا المغرب، دون المطار.",
+      "sub": "استلام في إيسون. تسليم في المغرب.",
+      "ctaPrimary": "عرض سعر واتساب",
+      "ctaSecondary": "1,50 € / كغ"
+    },
+    "offer": {
+      "headline": "الكيلو، ليس الحقيبة.",
+      "body": "سعر الانطلاق للشحن البري المجمع. الاستلام والنقل والتسليم داخل سعر الكيلو.",
+      "weighNote": "المبلغ الظاهر تقدير، محسوب من الأوزان التي تدخلونها. في الوكالة يُوزن كل أمتعة. إذا أعطى الميزان وزنا مختلفا، يُعدّل السعر وفق ذلك.",
+      "points": [
+        {
+          "title": "استلام إيل دو فرانس",
+          "text": "استلام في سافيني سور أورج وفي المقاطعة 91."
+        },
+        {
+          "title": "الشحن",
+          "text": "التجميع ينطلق من 91 حتى المغرب."
+        },
+        {
+          "title": "تسليم المغرب",
+          "text": "تسليم في المدينة، عند قريب، أو في وكالة شريكة."
+        }
+      ]
+    },
+    "cadence": {
+      "kicker": "طوال السنة",
+      "headline": "رحيل كل 15 يوما.",
+      "body": "التجميع ينطلق بانتظام، من فرنسا إلى المغرب والعودة. تضعون الطرود، نضعها في الرحيل الموالي."
+    },
+    "servicesTitle": "ما ننقله.",
+    "servicesBody": "حقائب، كراتين، أمتعة شخصية. ذهاب وإياب، دون عنبر الطائرة.",
+    "services": [
+      {
+        "title": "حقائب وأمتعة",
+        "text": "عندما لا يكفي وزن الطائرة، نرسل الباقي برا."
+      },
+      {
+        "title": "كرتون وطرود",
+        "text": "ملابس، أواني، أغراض الطالب، هدايا للعائلة."
+      },
+      {
+        "title": "أجهزة كهربائية صغيرة",
+        "text": "حسب العرض، تغليف محكم، وتأمين أساسي مشمول."
+      },
+      {
+        "title": "ذهاب وإياب",
+        "text": "فرنسا نحو المغرب، المغرب نحو فرنسا. نفس المخاطب."
+      }
+    ],
+    "route": {
+      "headline": "من المكتب حتى المغرب.",
+      "body": "ليس DHL وليس FedEx. تجميع فرنسا المغرب.",
+      "steps": [
+        {
+          "title": "مكتب إيسون",
+          "text": "تودعون في المكتب أو نأتي للاستلام. وزن حقيقي، ملصقات، وصل."
+        },
+        {
+          "title": "التسليم في المغرب",
+          "text": "الوصول إلى المغرب، ثم التسليم في العنوان أو الاستلام في المدينة."
+        }
+      ]
+    },
+    "coverage": {
+      "headline": "كل المغرب، من المقاطعة 91.",
+      "body": "انطلاق من سافيني سور أورج. تسليم في المدن الكبرى، وتنظيم لباقي البلاد.",
+      "fromLabel": "استلام فرنسا",
+      "toLabel": "تسليم المغرب"
+    },
+    "desksTitle": "فرنسا والمغرب.",
+    "desksBody": "شبكة مراسلين. واتساب أولا، واتصال هاتفي إن فضلتم.",
+    "desks": [
+      {
+        "country": "فرنسا",
+        "phones": ["0759284841", "0623768527"],
+        "note": "وكالة سافيني سور أورج، إيسون."
+      },
+      {
+        "country": "المغرب",
+        "phones": ["212660756654", "212664547988", "212666593848"],
+        "note": "تسليم في المدينة ومتابعة محلية."
+      }
+    ],
+    "faqTitle": "أسئلة متكررة",
+    "faq": [
+      {
+        "q": "هل أنتم وكيل شحن وليس توصيل سريع؟",
+        "a": "نعم. نجمع الإرساليات بين فرنسا والمغرب. لسنا DHL. المهلة أطول، والكيلو أرخص بكثير."
+      },
+      {
+        "q": "كم تستغرق المهلة؟",
+        "a": "عادة من 8 إلى 15 يوما بعد الاستلام، حسب التجميع ومدينة الوصول. رحيل كل 15 يوما."
+      },
+      {
+        "q": "ماذا يمكن إرساله؟",
+        "a": "حقائب، كراتين، ملابس، أواني، أجهزة صغيرة، أغراض الطالب. ممنوع الكحول والمواد القابلة للتلف والمواد الممنوعة."
+      },
+      {
+        "q": "هل تعملون أيضا من المغرب إلى فرنسا؟",
+        "a": "نعم، في الاتجاهين. أخبرونا بمدينة الانطلاق في المغرب وعنوان إيل دو فرانس."
+      },
+      {
+        "q": "كيف أحصل على عرض سعر؟",
+        "a": "واتساب هو الأسرع: الوزن، عدد الطرود، مدينة الانطلاق والوصول. يمكنكم أيضا ترك رقمكم لنتصل بكم."
+      }
+    ],
+    "form": {
+      "headline": "صفوا الحاجة. نرد على واتساب.",
+      "body": "الوزن، المدن، اتجاه الرحلة. رسالة واحدة تكفي. أو نعاود الاتصال إن فضلتم.",
+      "submitWhatsapp": "إرسال عبر واتساب",
+      "submitCallback": "أفضل اتصالا هاتفيا",
+      "successWhatsapp": "واتساب يفتح مع طلبكم.",
+      "successCallback": "تم. سنتصل بهذا الرقم.",
+      "name": "الاسم",
+      "phone": "الهاتف",
+      "direction": "اتجاه الرحلة",
+      "weight": "الوزن (كغ)",
+      "from": "الانطلاق",
+      "to": "الوصول",
+      "need": "حاجتكم",
+      "dirFrMa": "فرنسا نحو المغرب",
+      "dirMaFr": "المغرب نحو فرنسا",
+      "error": "أدخلوا الاسم ورقم هاتف يمكن الاتصال به."
+    },
+    "footer": {
+      "blurb": "وكيل شحن فرنسا المغرب من سافيني سور أورج. تجميع فرنسا المغرب.",
+      "agency": "الوكالة",
+      "contact": "اتصال"
+    },
+    "cardsTitle": "بطاقة الزيارة",
+    "cardsBody": "الوجه والظهر، للحفظ أو للطباعة.",
+    "cardsFront": "الوجه",
+    "cardsBack": "الظهر",
+    "arabicTagline": "إرساليات سام للنقل الدولي"
+  }
+}
