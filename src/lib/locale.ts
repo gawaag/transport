@@ -7,6 +7,8 @@ export function localize(source: SiteContent, lang: Lang): SiteContent {
     ...source,
     seo: { ...source.seo, ...a.seo },
     arabicTagline: a.arabicTagline ?? source.arabicTagline,
+    availableLabel: a.availableLabel ?? source.availableLabel,
+    pickupNote: a.pickupNote ?? source.pickupNote,
     hero: { ...source.hero, ...a.hero },
     offer: {
       ...source.offer,

@@ -27,6 +27,9 @@ export const ui = {
     corridorEs: 'Espagne',
     corridorMa: 'Maroc',
     corridorBoat: 'bateau',
+    call: 'Appel',
+    sms: 'SMS',
+    callbackError: 'La demande de rappel n’a pas pu partir. Réessayez ou écrivez sur WhatsApp.',
   },
   ar: {
     offre: 'العرض',
@@ -54,6 +57,9 @@ export const ui = {
     corridorEs: 'إسبانيا',
     corridorMa: 'المغرب',
     corridorBoat: 'قارب',
+    call: 'اتصال',
+    sms: 'رسالة',
+    callbackError: 'تعذر إرسال طلب الاتصال. أعيدوا المحاولة أو اكتبوا على واتساب.',
   },
 } as const
 

@@ -1,5 +1,6 @@
 import crypto from 'node:crypto'
 import { createStore } from './store.js'
+import { sendCallbackEmail } from './mail.js'
 
 const TOKEN_TTL_MS = 1000 * 60 * 60 * 12
 const DEV_CREDS = { username: 'livraison91', code: 'Express91!' }
@@ -190,6 +191,7 @@ export function createCms({ root, defaultContent } = {}) {
         cityTo: String(body.cityTo || '').slice(0, 60),
         message: String(body.message || '').slice(0, 800),
         prefer: String(body.prefer || 'whatsapp').slice(0, 20),
+        parcels: Array.isArray(body.parcels) ? body.parcels.slice(0, 20) : [],
       }
       if (!lead.name || !lead.phone) {
         send(res, 400, { ok: false, error: 'Nom et téléphone requis.' })
@@ -199,6 +201,13 @@ export function createCms({ root, defaultContent } = {}) {
       const leads = await db.getLeads()
       leads.unshift(lead)
       await db.setLeads(leads.slice(0, 200))
+      if (lead.prefer === 'callback') {
+        const mailed = await sendCallbackEmail(lead)
+        if (!mailed.ok) {
+          send(res, 502, { ok: false, error: 'Impossible d’envoyer la demande de rappel.' })
+          return true
+        }
+      }
       send(res, 200, { ok: true, id: lead.id })
       return true
     }

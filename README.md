@@ -23,5 +23,6 @@ Admin : `/console-lx91`
 | `CMS_USERNAME` | Identifiant admin |
 | `CMS_PASSWORD` | Code admin |
 | `CMS_SESSION_SECRET` | Secret session (long, aleatoire) |
+| `CALLBACK_EMAIL` | Boite qui recoit les demandes de rappel (jamais affichee sur le site) |
 
 Sans ces variables, le site public s'affiche quand meme. Seul l'admin `/console-lx91` exige les identifiants.

@@ -1,10 +1,10 @@
 import { Minus, Phone, Plus, WhatsappLogo } from '@phosphor-icons/react'
 import { useEffect, useMemo, useState, type FormEvent, type ReactNode } from 'react'
 import { Button } from '../components/Button'
+import { ContactPhones } from '../components/ContactPhones'
 import { Reveal } from '../components/Reveal'
 import { useSite } from '../context/SiteContext'
 import { api } from '../lib/api'
-import { formatPhone, telHref } from '../lib/format'
 import { buildQuoteMessage, waHref } from '../lib/whatsapp'
 
 type Parcel = { item: string; kg: string }
@@ -64,8 +64,12 @@ export function Contact() {
     }
     try {
       await api.postLead({ ...payload, prefer })
-    } catch {
-      /* WhatsApp remains the main path */
+    } catch (err) {
+      if (prefer === 'callback') {
+        setError(err instanceof Error && err.message ? err.message : ui.callbackError)
+        setStatus('error')
+        return
+      }
     }
     if (prefer === 'whatsapp') {
       window.open(waHref(contact.whatsapp, buildQuoteMessage(payload)), '_blank')
@@ -90,24 +94,25 @@ export function Contact() {
           <p className="mt-4 max-w-[42ch] text-base leading-relaxed text-[var(--muted)]">
             {form.body}
           </p>
-          <div className="mt-10 overflow-hidden rounded-[var(--radius)]">
+          <div className="relative mt-10 overflow-hidden rounded-[var(--radius)]">
             <img
               src={content.agencyImage}
               alt=""
               className="aspect-[4/3] w-full object-cover"
               loading="lazy"
             />
+            <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 via-black/45 to-transparent p-4 pt-16 text-white">
+              <p className="text-xs font-semibold tracking-[0.16em] uppercase text-[#8ee0b5]">
+                {content.availableLabel}
+              </p>
+              <p className="mt-1 max-w-[42ch] text-sm leading-snug">{content.pickupNote}</p>
+            </div>
           </div>
-          <div className="mt-6 flex flex-col gap-2 text-sm text-[var(--muted)]">
-            <p>
+          <div className="mt-6 flex flex-col gap-3">
+            <p className="text-sm text-[var(--muted)]">
               {contact.address}, {contact.city}
             </p>
-            <a href={telHref(contact.phone1)} className="hover:text-[var(--ink)]">
-              {formatPhone(contact.phone1)}
-            </a>
-            <a href={telHref(contact.phone2)} className="hover:text-[var(--ink)]">
-              {formatPhone(contact.phone2)}
-            </a>
+            <ContactPhones />
           </div>
         </Reveal>
 

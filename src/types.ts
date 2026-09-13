@@ -105,6 +105,8 @@ export type CopyBlock = {
   cardsFront: string
   cardsBack: string
   arabicTagline: string
+  availableLabel: string
+  pickupNote: string
 }
 
 export type SiteContent = {
@@ -117,6 +119,7 @@ export type SiteContent = {
     phone1: string
     phone2: string
     whatsapp: string
+    whatsapp2?: string
     email: string
     address: string
     city: string
@@ -211,6 +214,8 @@ export type SiteContent = {
   agencyImage: string
   cardFront: string
   cardBack: string
+  availableLabel: string
+  pickupNote: string
   ar: Partial<CopyBlock>
 }
 

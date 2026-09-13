@@ -1,11 +1,10 @@
+import { ContactPhones } from './ContactPhones'
 import { Logo } from './Logo'
 import { SocialBar } from './SocialBar'
 import { useSite } from '../context/SiteContext'
-import { formatPhone, telHref } from '../lib/format'
-import { quoteIntro, waHref } from '../lib/whatsapp'
 
 export function Footer() {
-  const { content, lang, ui } = useSite()
+  const { content, ui } = useSite()
   const { contact, brand, footer } = content
   return (
     <footer className="border-t border-[var(--line)] py-16">
@@ -32,21 +31,8 @@ export function Footer() {
         </div>
         <div>
           <p className="text-sm font-medium">{footer.contact}</p>
-          <div className="mt-3 flex flex-col gap-2 text-sm">
-            <a className="text-[var(--muted)] hover:text-[var(--ink)]" href={telHref(contact.phone1)}>
-              {formatPhone(contact.phone1)}
-            </a>
-            <a className="text-[var(--muted)] hover:text-[var(--ink)]" href={telHref(contact.phone2)}>
-              {formatPhone(contact.phone2)}
-            </a>
-            <a
-              className="text-[var(--muted)] hover:text-[var(--ink)]"
-              href={waHref(contact.whatsapp, quoteIntro(brand.name, lang))}
-              target="_blank"
-              rel="noreferrer"
-            >
-              {ui.whatsapp}
-            </a>
+          <div className="mt-3">
+            <ContactPhones compact />
           </div>
           <div className="mt-5">
             <SocialBar />

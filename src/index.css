@@ -64,8 +64,8 @@ html[lang="ar"] body {
   font-family: var(--font-sans);
 }
 
-.lx-logo text {
-  font-family: var(--font-sans);
+.lx-phone {
+  direction: ltr;
   unicode-bidi: isolate;
 }
 

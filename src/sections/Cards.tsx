@@ -45,9 +45,8 @@ export function Cards() {
                     <br />
                     {contact.city}
                   </p>
-                  <p className="pt-2">{formatPhone(contact.phone1)}</p>
-                  <p>{formatPhone(contact.phone2)}</p>
-                  <p>{contact.email}</p>
+                  <p className="lx-phone pt-2">{formatPhone(contact.phone1)}</p>
+                  <p className="lx-phone">{formatPhone(contact.phone2)}</p>
                 </div>
                 <div className="mt-auto pt-4">
                   <SocialBar compact />

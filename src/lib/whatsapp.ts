@@ -1,9 +1,7 @@
+import { intlPhone } from './format'
+
 export function toIntlPhone(raw: string) {
-  const d = raw.replace(/\D/g, '')
-  if (d.startsWith('33')) return d
-  if (d.startsWith('212')) return d
-  if (d.startsWith('0')) return `33${d.slice(1)}`
-  return d
+  return intlPhone(raw)
 }
 
 export function waHref(phone: string, text: string) {

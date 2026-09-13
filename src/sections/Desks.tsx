@@ -1,6 +1,7 @@
+import { ContactPhones } from '../components/ContactPhones'
+import { Reveal } from '../components/Reveal'
 import { useSite } from '../context/SiteContext'
 import { formatPhone, telHref } from '../lib/format'
-import { Reveal } from '../components/Reveal'
 
 export function Desks() {
   const { desks, desksTitle, desksBody } = useSite().content
@@ -19,12 +20,22 @@ export function Desks() {
           {desks.map((desk) => (
             <article key={desk.country} className="border-b border-[var(--line)] py-6 first:pt-0 last:border-b-0">
               <p className="text-lg font-medium tracking-tight">{desk.country}</p>
-              <div className="mt-2 flex flex-col gap-1 text-sm">
-                {desk.phones.map((phone) => (
-                  <a key={phone} href={telHref(phone)} className="text-[var(--muted)] hover:text-[var(--ink)]">
-                    {formatPhone(phone)}
-                  </a>
-                ))}
+              <div className="mt-3">
+                {/france|فرنسا/i.test(desk.country) ? (
+                  <ContactPhones />
+                ) : (
+                  <div className="flex flex-col gap-1 text-sm" dir="ltr">
+                    {desk.phones.map((phone) => (
+                      <a
+                        key={phone}
+                        href={telHref(phone)}
+                        className="lx-phone text-[var(--muted)] hover:text-[var(--ink)]"
+                      >
+                        {formatPhone(phone)}
+                      </a>
+                    ))}
+                  </div>
+                )}
               </div>
               <p className="mt-2 text-sm text-[var(--muted)]">{desk.note}</p>
             </article>

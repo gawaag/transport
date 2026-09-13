@@ -9,9 +9,10 @@
     "description": "Transitaire France-Maroc depuis Savigny-sur-Orge. Groupage France-Maroc. Un départ tous les 15 jours. A partir de 1,50 euro le kilo."
   },
   "contact": {
-    "phone1": "0759284841",
-    "phone2": "0623768527",
-    "whatsapp": "0759284841",
+    "phone1": "0652833621",
+    "phone2": "0751139265",
+    "whatsapp": "0744141908",
+    "whatsapp2": "0751139265",
     "email": "contact@samtransportchark.fr",
     "address": "27 Avenue de la Gare",
     "city": "91600 Savigny-sur-Orge",
@@ -25,13 +26,15 @@
     "radius": 16
   },
   "arabicTagline": "إرساليات سام للنقل الدولي",
+  "availableLabel": "Disponible",
+  "pickupNote": "Ramassage possible à partir de 15 €, selon le département et la ville.",
   "agencyImage": "/images/agence-comptoir.png",
   "cardFront": "/cards/front.png",
   "cardBack": "/cards/back.png",
   "hero": {
     "kicker": "S.A.M TRANSPORT CHARK",
     "headline": "France Maroc, sans l'aéroport.",
-    "sub": "Collecte en Essonne. Livraison au Maroc.",
+    "sub": "Collecte en Essonne. Ramassage possible. Livraison au Maroc.",
     "ctaPrimary": "Devis WhatsApp",
     "ctaSecondary": "1,50 € / kg",
     "image": "/images/highway-night.png"
@@ -44,8 +47,8 @@
     "defaultKg": 40,
     "points": [
       {
-        "title": "Collecte Ile-de-France",
-        "text": "Prise en charge à Savigny-sur-Orge et dans le 91."
+        "title": "Ramassage",
+        "text": "Disponible à partir de 15 €, selon le département et la ville du client."
       },
       {
         "title": "Acheminement",
@@ -115,7 +118,7 @@
   "desks": [
     {
       "country": "France",
-      "phones": ["0759284841", "0623768527"],
+      "phones": ["0652833621", "0751139265"],
       "note": "Agence Savigny-sur-Orge, Essonne."
     },
     {
@@ -208,7 +211,7 @@
     "hero": {
       "kicker": "S.A.M TRANSPORT CHARK",
       "headline": "فرنسا المغرب، دون المطار.",
-      "sub": "استلام في إيسون. تسليم في المغرب.",
+      "sub": "استلام في إيسون. جمع ممكن. تسليم في المغرب.",
       "ctaPrimary": "عرض سعر واتساب",
       "ctaSecondary": "1,50 € / كغ"
     },
@@ -218,8 +221,8 @@
       "weighNote": "المبلغ الظاهر تقدير، محسوب من الأوزان التي تدخلونها. في الوكالة يُوزن كل أمتعة. إذا أعطى الميزان وزنا مختلفا، يُعدّل السعر وفق ذلك.",
       "points": [
         {
-          "title": "استلام إيل دو فرانس",
-          "text": "استلام في سافيني سور أورج وفي المقاطعة 91."
+          "title": "جمع الأمتعة",
+          "text": "متاح ابتداء من 15 أورو، حسب المقاطعة ومدينة الزبون."
         },
         {
           "title": "الشحن",
@@ -281,7 +284,7 @@
     "desks": [
       {
         "country": "فرنسا",
-        "phones": ["0759284841", "0623768527"],
+        "phones": ["0652833621", "0751139265"],
         "note": "وكالة سافيني سور أورج، إيسون."
       },
       {
@@ -340,6 +343,8 @@
     "cardsBody": "الوجه والظهر، للحفظ أو للطباعة.",
     "cardsFront": "الوجه",
     "cardsBack": "الظهر",
-    "arabicTagline": "إرساليات سام للنقل الدولي"
+    "arabicTagline": "إرساليات سام للنقل الدولي",
+    "availableLabel": "متاح",
+    "pickupNote": "يمكن الجمع ابتداء من 15 أورو، حسب المقاطعة والمدينة."
   }
 }

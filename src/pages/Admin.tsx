@@ -637,6 +637,11 @@ function ContactTab({
       <Field label="Téléphone 1" value={c.phone1} onChange={(v) => patch({ phone1: v })} />
       <Field label="Téléphone 2" value={c.phone2} onChange={(v) => patch({ phone2: v })} />
       <Field label="WhatsApp (numéro)" value={c.whatsapp} onChange={(v) => patch({ whatsapp: v })} />
+      <Field
+        label="WhatsApp ligne 2"
+        value={c.whatsapp2 ?? ''}
+        onChange={(v) => patch({ whatsapp2: v })}
+      />
       <Field label="Email" value={c.email} onChange={(v) => patch({ email: v })} />
       <Field label="Adresse" value={c.address} onChange={(v) => patch({ address: v })} />
       <Field label="Ville / CP" value={c.city} onChange={(v) => patch({ city: v })} />
